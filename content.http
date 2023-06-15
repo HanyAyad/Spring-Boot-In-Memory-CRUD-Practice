@@ -1,0 +1,38 @@
+### Find All Content
+GET http://localhost:8080/api/content
+
+###Get Content By ID
+GET http://localhost:8080/api/content/{id}
+
+###Create New Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "Second Highest in the room",
+    "desc": "Second Fav desc",
+    "status": "IDEA",
+    "type": "ARTICLE",
+    "dateCreated": "2023-06-15T14:38:24.5174495",
+    "dateUpdated": null,
+    "url": ""
+  }
+
+###Update Existing Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "First Highest in the room",
+  "desc": "FIRST Fav desc",
+  "status": "IDEA",
+  "type": "ARTICLE",
+  "dateCreated": "2023-06-15T14:38:24.5174495",
+  "dateUpdated": null,
+  "url": ""
+}
+
+###Delete Content by ID
+DELETE http://localhost:8080/api/content/1
